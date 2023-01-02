@@ -6,12 +6,6 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-void PrintResult(bool flag, int userDigit)
-{
-   
-   
-}
-
 void PrintArray(int[,] array)
 {
    for (int i = 0; i < array.GetLength(0); i++)
@@ -74,9 +68,8 @@ int[,] matrix = CreateRandomArray(rows, columns, 1, 10);
 int userDigit = EnterNumber("Введите произвольное число: ");
 // выводим массив
 PrintArray(matrix);
-// проверяем массив на наличие этого числа
+// проверяем массив на наличие этого числа и вывод результата
 bool findPosition = FindPosition(matrix, userDigit);
-// выводим резльтат поиска числа
-PrintResult(findPosition, userDigit);
+
 
 
